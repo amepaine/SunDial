@@ -1,0 +1,27 @@
+{
+  "fitbit": {
+    "appUUID": "f900a223-f772-431c-a641-920c9acf77ee",
+    "appType": "clockface",
+    "appDisplayName": "SunDial",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "SunDial"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.0.0"
+  }
+}
