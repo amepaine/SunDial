@@ -153,14 +153,13 @@ function onMinute() {
   var maxHR = 220 - getAge();
   var reserve = (getCurrentHeartRate() - basal) / (maxHR - basal);
   var hour = getHour();
-  hour = 12;
-  cumulativeSun += 5 / reapplyTime(latitude, day, hour, reserve);
+  cumulativeSun += 1 / reapplyTime(latitude, day, hour, reserve);
   fillTriangle(cumulativeSun);
   console.log(cumulativeSun);
 }
 
 // Update the clock every second
-clock.granularity = "seconds";
+clock.granularity = "minutes";
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
